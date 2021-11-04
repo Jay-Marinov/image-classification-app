@@ -1,0 +1,56 @@
+.searchHistory-section {
+  padding: 0.5rem;
+  width: fit-content;
+  background: $color4;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    text-transform: capitalize;
+    text-align: center;
+    color: $color3;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 576px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.searchHistory-div {
+  width: fit-content;
+  max-width: 80vw;
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: 100ms;
+    @include shadow;
+    &:hover {
+      transform: scale(1.1);
+      transition: 100ms;
+    }
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+.col {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline-searchHistory {
+  width: 16rem;
+  height: 0.4rem;
+  background: $color3;
+  border-radius: $border-radius;
+  margin-bottom: 2rem;
+}

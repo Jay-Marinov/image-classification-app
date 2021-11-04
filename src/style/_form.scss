@@ -1,0 +1,18 @@
+.form-section {
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color2;
+    opacity: 1; /* Firefox */
+  }
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold !important;
+  color: $color3 !important;
+  border-radius: $border-radius !important;
+  @include shadow;
+}
